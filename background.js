@@ -96,7 +96,8 @@ async function startExtensionMonitoring() {
 		"2011624355",  //蔡玲玲 1
 		"2011840981",  //蔡玲玲 2
 		"2011624335",  //吴俊琛
-		"2011624512"   //周铮
+		"2011624512",  //周铮
+		"2013816237"   //祝超
 	];
 
 	for (const jnID of myJinNang) {
