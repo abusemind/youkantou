@@ -1,0 +1,58 @@
+{
+  "manifest_version": 3,
+  "name": "有看投锦囊",
+  "description": "有看投锦囊检测",
+  "version": "1.0",
+  "devtools_page": "devtools.html",
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "js": [
+        "content.js"
+      ],
+      "run_at": "document_start",
+      "matches": [
+        "https://youkantou.emoney.cn/jinNang/*"
+      ]
+    }
+  ],
+  "permissions": [
+    "scripting",
+    "activeTab",
+    "alarms",
+    "tabs",
+    "notifications",
+    "storage",
+    "contextMenus"
+  ],
+  "host_permissions": [
+    "https://youkantou.emoney.cn/jinNang/*",
+    "https://xueqiu.com/*"
+  ],
+  "action": {
+    "default_icon": {
+      "16": "images/icon-256.png",
+      "32": "images/icon-256.png",
+      "48": "images/icon-256.png",
+      "128": "images/icon-256.png",
+      "256": "images/icon-256.png"
+
+    }
+  },
+  "icons": {
+    "16": "images/icon-256.png",
+    "32": "images/icon-256.png",
+    "48": "images/icon-256.png",
+    "128": "images/icon-256.png"
+  },
+  "commands": {
+    "_execute_action": {
+      "suggested_key": {
+        "default": "Ctrl+B",
+        "mac": "Command+B"
+      }
+    }
+  }
+}
